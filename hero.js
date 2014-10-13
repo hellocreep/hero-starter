@@ -115,8 +115,8 @@ var move = function(gameData, helpers) {
     // Attack
     return enemyStats.direction;
   } else {
-    //If healthy, go capture a diamond mine!
-    return helpers.findNearestNonTeamDiamondMine(gameData);
+    // Find a enemy
+    return helpers.findNearestEnemy(gameData);
   }
 };
 
